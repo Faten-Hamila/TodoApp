@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="iba-cG-fG0" id="qI9-Lg-t7P"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TodoApp" id="Oeh-bR-56X"/>
+                    <navigationItem key="navigationItem" title="TodoApp" id="Oeh-bR-56X">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Xps-iU-DLP">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addbuttonPressed:" destination="iba-cG-fG0" id="xtw-up-eoe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixM-3X-J7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +51,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eGn-3u-YEu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M0k-uI-t75">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.89592238131725899" green="0.50214176943580513" blue="0.70068205707696152" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
